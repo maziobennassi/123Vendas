@@ -1,6 +1,8 @@
 # Editor directories and files
 .vscode/
+.vs
 
 # API
 bin/
 obj/
+.fake

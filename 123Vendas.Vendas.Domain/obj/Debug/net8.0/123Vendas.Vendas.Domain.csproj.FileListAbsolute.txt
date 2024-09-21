@@ -1,0 +1,12 @@
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Domain\bin\Debug\net8.0\123Vendas.Vendas.Domain.deps.json
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Domain\bin\Debug\net8.0\123Vendas.Vendas.Domain.dll
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Domain\bin\Debug\net8.0\123Vendas.Vendas.Domain.pdb
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Domain\obj\Debug\net8.0\123Vendas.Vendas.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Domain\obj\Debug\net8.0\123Vendas.Vendas.Domain.AssemblyInfoInputs.cache
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Domain\obj\Debug\net8.0\123Vendas.Vendas.Domain.AssemblyInfo.cs
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Domain\obj\Debug\net8.0\123Vendas.Vendas.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Domain\obj\Debug\net8.0\123Vendas.Vendas.Domain.sourcelink.json
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Domain\obj\Debug\net8.0\123Vendas.Vendas.Domain.dll
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Domain\obj\Debug\net8.0\refint\123Vendas.Vendas.Domain.dll
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Domain\obj\Debug\net8.0\123Vendas.Vendas.Domain.pdb
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Domain\obj\Debug\net8.0\ref\123Vendas.Vendas.Domain.dll

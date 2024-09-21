@@ -1,0 +1,16 @@
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Application\bin\Debug\net8.0\123Vendas.Vendas.Application.deps.json
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Application\bin\Debug\net8.0\123Vendas.Vendas.Application.dll
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Application\bin\Debug\net8.0\123Vendas.Vendas.Application.pdb
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Application\bin\Debug\net8.0\123Vendas.Vendas.Domain.dll
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Application\bin\Debug\net8.0\123Vendas.Vendas.Domain.pdb
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Application\obj\Debug\net8.0\123Vendas.Vendas.Application.csproj.AssemblyReference.cache
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Application\obj\Debug\net8.0\123Vendas.Vendas.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Application\obj\Debug\net8.0\123Vendas.Vendas.Application.AssemblyInfoInputs.cache
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Application\obj\Debug\net8.0\123Vendas.Vendas.Application.AssemblyInfo.cs
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Application\obj\Debug\net8.0\123Vendas.Vendas.Application.csproj.CoreCompileInputs.cache
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Application\obj\Debug\net8.0\123Vendas.Vendas.Application.sourcelink.json
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Application\obj\Debug\net8.0\123Venda.70085F44.Up2Date
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Application\obj\Debug\net8.0\123Vendas.Vendas.Application.dll
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Application\obj\Debug\net8.0\refint\123Vendas.Vendas.Application.dll
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Application\obj\Debug\net8.0\123Vendas.Vendas.Application.pdb
+C:\Users\Mazio\Desktop\projects\123Vendas\123Vendas.Vendas.Application\obj\Debug\net8.0\ref\123Vendas.Vendas.Application.dll
