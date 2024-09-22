@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mazio\\Desktop\\projects\\123Vendas\\VendasApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A999E07E-9EA9-413F-B820-263761F5E6E5}|..\\123Vendas.Vendas.Domain\\123Vendas.Vendas.Domain.csproj|c:\\users\\mazio\\desktop\\projects\\123vendas\\123vendas.vendas.domain\\entities\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF45B603-727E-45B9-B896-8CED9F14C238}|..\\123Vendas.Vendas.Infrastructure\\123Vendas.Vendas.Infrastructure.csproj|c:\\users\\mazio\\desktop\\projects\\123vendas\\123vendas.vendas.infrastructure\\persistance\\vendasdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FEEE4F2-DCE9-4409-8956-211412687FD8}|VendasApi.csproj|c:\\users\\mazio\\desktop\\projects\\123vendas\\vendasapi\\vendasapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{1FEEE4F2-DCE9-4409-8956-211412687FD8}|VendasApi.csproj|solutionrelative:vendasapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A999E07E-9EA9-413F-B820-263761F5E6E5}|..\\123Vendas.Vendas.Domain\\123Vendas.Vendas.Domain.csproj|c:\\users\\mazio\\desktop\\projects\\123vendas\\123vendas.vendas.domain\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FEEE4F2-DCE9-4409-8956-211412687FD8}|VendasApi.csproj|c:\\users\\mazio\\desktop\\projects\\123vendas\\vendasapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FEEE4F2-DCE9-4409-8956-211412687FD8}|VendasApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FEEE4F2-DCE9-4409-8956-211412687FD8}|VendasApi.csproj|c:\\users\\mazio\\desktop\\projects\\123vendas\\vendasapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FEEE4F2-DCE9-4409-8956-211412687FD8}|VendasApi.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FEEE4F2-DCE9-4409-8956-211412687FD8}|VendasApi.csproj|c:\\users\\mazio\\desktop\\projects\\123vendas\\vendasapi\\controllers\\weatherforecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FEEE4F2-DCE9-4409-8956-211412687FD8}|VendasApi.csproj|solutionrelative:controllers\\weatherforecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FEEE4F2-DCE9-4409-8956-211412687FD8}|123Vendas.Vendas.API.csproj|c:\\users\\mazio\\desktop\\projects\\123vendas\\vendasapi\\123vendas.vendas.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{1FEEE4F2-DCE9-4409-8956-211412687FD8}|123Vendas.Vendas.API.csproj|solutionrelative:123vendas.vendas.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VendasApi.http",
+              "DocumentMoniker": "C:\\Users\\Mazio\\Desktop\\projects\\123Vendas\\VendasApi\\VendasApi.http",
+              "RelativeDocumentMoniker": "VendasApi.http",
+              "ToolTip": "C:\\Users\\Mazio\\Desktop\\projects\\123Vendas\\VendasApi\\VendasApi.http",
+              "RelativeToolTip": "VendasApi.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-09-21T16:22:15.831Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\Mazio\\Desktop\\projects\\123Vendas\\123Vendas.Vendas.Domain\\Entities\\Produto.cs",
+              "RelativeDocumentMoniker": "..\\123Vendas.Vendas.Domain\\Entities\\Produto.cs",
+              "ToolTip": "C:\\Users\\Mazio\\Desktop\\projects\\123Vendas\\123Vendas.Vendas.Domain\\Entities\\Produto.cs",
+              "RelativeToolTip": "..\\123Vendas.Vendas.Domain\\Entities\\Produto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T17:15:55.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mazio\\Desktop\\projects\\123Vendas\\VendasApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Mazio\\Desktop\\projects\\123Vendas\\VendasApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T15:26:21.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VendasDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Mazio\\Desktop\\projects\\123Vendas\\123Vendas.Vendas.Infrastructure\\Persistance\\VendasDbContext.cs",
+              "RelativeDocumentMoniker": "..\\123Vendas.Vendas.Infrastructure\\Persistance\\VendasDbContext.cs",
+              "ToolTip": "C:\\Users\\Mazio\\Desktop\\projects\\123Vendas\\123Vendas.Vendas.Infrastructure\\Persistance\\VendasDbContext.cs",
+              "RelativeToolTip": "..\\123Vendas.Vendas.Infrastructure\\Persistance\\VendasDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T21:40:38.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Venda.cs",
+              "DocumentMoniker": "C:\\Users\\Mazio\\Desktop\\projects\\123Vendas\\123Vendas.Vendas.Domain\\Entities\\Venda.cs",
+              "RelativeDocumentMoniker": "..\\123Vendas.Vendas.Domain\\Entities\\Venda.cs",
+              "ToolTip": "C:\\Users\\Mazio\\Desktop\\projects\\123Vendas\\123Vendas.Vendas.Domain\\Entities\\Venda.cs",
+              "RelativeToolTip": "..\\123Vendas.Vendas.Domain\\Entities\\Venda.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T17:01:43.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Mazio\\Desktop\\projects\\123Vendas\\VendasApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Mazio\\Desktop\\projects\\123Vendas\\VendasApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T16:16:35.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeatherForecastService.cs",
+              "DocumentMoniker": "C:\\Users\\Mazio\\Desktop\\projects\\123Vendas\\VendasApi\\Controllers\\WeatherForecastService.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastService.cs",
+              "ToolTip": "C:\\Users\\Mazio\\Desktop\\projects\\123Vendas\\VendasApi\\Controllers\\WeatherForecastService.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T16:16:21.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VendasApi",
+              "DocumentMoniker": "C:\\Users\\Mazio\\Desktop\\projects\\123Vendas\\VendasApi\\123Vendas.Vendas.API.csproj",
+              "RelativeDocumentMoniker": "123Vendas.Vendas.API.csproj",
+              "ToolTip": "C:\\Users\\Mazio\\Desktop\\projects\\123Vendas\\VendasApi\\123Vendas.Vendas.API.csproj",
+              "RelativeToolTip": "123Vendas.Vendas.API.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-21T15:25:18.206Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

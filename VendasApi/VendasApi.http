@@ -1,6 +1,8 @@
-@VendasApi_HostAddress = http://localhost:5274
+@host = http://localhost
+@port= 5274
 
-GET {{VendasApi_HostAddress}}/weatherforecast/
-Accept: application/json
+@VendasApi_HostAddress = {{host}}:{{port}}
+
+
 
 ###
