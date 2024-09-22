@@ -1,6 +1,6 @@
 # Editor directories and files
 .vscode/
-.vs
+.vs/
 
 # API
 bin/
