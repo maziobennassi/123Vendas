@@ -7,44 +7,39 @@ namespace _123Vendas.Vendas.Domain.Repositories
 {
     internal class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
     {
-        private readonly VendasDbContext _vendasDbContext;
+        public readonly VendasDbContext _context;
+        public DbSet<TEntity> entity => _context.Set<TEntity>();
 
-        public BaseRepository(VendasDbContext vendasDbContext)
+        public BaseRepository(VendasDbContext context)
         {
-            _vendasDbContext = vendasDbContext;
+            _context = context;
         }
 
         public void Adicionar(TEntity entity)
         {
-            _vendasDbContext.Set<TEntity>().Add(entity);
-            _vendasDbContext.SaveChanges();
+            this.entity.Add(entity);
+            _context.SaveChanges();
         }
 
         public void Atualizar(TEntity entity)
         {
-            _vendasDbContext.Set<TEntity>().Update(entity);
-            _vendasDbContext.SaveChanges();
-        }
-
-        public TEntity BuscarUm(Expression<Func<TEntity, bool>> predicate)
-        {
-            return _vendasDbContext.Set<TEntity>().AsNoTracking().FirstOrDefault(predicate)!;
-        }
-
-        public IQueryable<TEntity> Buscar(Expression<Func<TEntity, bool>> predicate)
-        {
-            return _vendasDbContext.Set<TEntity>().AsNoTracking().Where(predicate);
+            _context.Update(entity);
+            _context.SaveChanges();
         }
 
         public IQueryable<TEntity> BuscarTodos()
         {
-            return _vendasDbContext.Set<TEntity>().AsNoTracking();
+            return this.entity.AsNoTracking();
         }
 
-        public void Deletar(TEntity entity)
+        public TEntity BuscarUm(Expression<Func<TEntity, bool>> predicate)
         {
-            _vendasDbContext.Set<TEntity>().Remove(entity);
-            _vendasDbContext.SaveChanges();
+            return this.entity.AsNoTracking().FirstOrDefault(predicate)!;
+        }
+
+        public IQueryable<TEntity> Buscar(Expression<Func<TEntity, bool>> predicate)
+        {
+            return this.entity.AsNoTracking().Where(predicate);
         }
     }
 }
