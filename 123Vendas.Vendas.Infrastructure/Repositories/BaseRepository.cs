@@ -15,16 +15,18 @@ namespace _123Vendas.Vendas.Domain.Repositories
             _context = context;
         }
 
-        public void Adicionar(TEntity entity)
+        public TEntity Adicionar(TEntity entity)
         {
             this.entity.Add(entity);
             _context.SaveChanges();
+            return entity;
         }
 
-        public void Atualizar(TEntity entity)
+        public TEntity Atualizar(TEntity entity)
         {
             _context.Update(entity);
             _context.SaveChanges();
+            return entity;
         }
 
         public IQueryable<TEntity> BuscarTodos()

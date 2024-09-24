@@ -1,6 +1,7 @@
 ﻿using _123Vendas.Vendas.Application.DTOs;
+using _123Vendas.Vendas.Application.Interfaces.Publishers;
 using _123Vendas.Vendas.Application.Interfaces.Services;
-using _123Vendas.Vendas.Domain.Entities;
+using _123Vendas.Vendas.Infrastructure.RabbitMQ.Settings;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -12,20 +13,22 @@ namespace _123Vendas.Vendas.API.Controllers
     public class VendasController : ControllerBase
     {
         private readonly IVendasService _vendasService;
+        private readonly IRabbitMQPublisher<VendaDTO> _vendaMqPublisher;
 
-        public VendasController(IVendasService vendasService)
+        public VendasController(IVendasService vendasService, IRabbitMQPublisher<VendaDTO> vendaMqPublisher)
         {
             _vendasService = vendasService;
+            _vendaMqPublisher = vendaMqPublisher;
         }
 
 
         // GET: api/<ValuesController>
         [HttpGet]
-        public ActionResult<List<VendaDTO>> GetAll()
+        public ActionResult<List<VendaDTO>> BuscarTodos()
         {
             try
             {
-                var vendas = _vendasService.BuscarTodos();
+                List<VendaDTO> vendas = _vendasService.BuscarTodos();
                 return Ok(vendas);
             }
             catch (Exception ex)
@@ -36,7 +39,7 @@ namespace _123Vendas.Vendas.API.Controllers
 
         // GET api/<ValuesController>/{id}
         [HttpGet("{id}")]
-        public ActionResult<VendaDTO> Get(string id)
+        public ActionResult<VendaDTO> BuscarPorId(string id)
         {
             try
             {
@@ -44,7 +47,7 @@ namespace _123Vendas.Vendas.API.Controllers
 
                 if (Guid.TryParse(id, out vendaId))
                 {
-                    var venda = _vendasService.BuscarPorId(vendaId);
+                    VendaDTO venda = _vendasService.BuscarPorId(vendaId);
 
                     if (venda != null)
                     {
@@ -64,14 +67,15 @@ namespace _123Vendas.Vendas.API.Controllers
 
         // POST api/<VendasController>
         [HttpPost]
-        public ActionResult Post([FromBody] VendaDTO venda)
+        public async Task<ActionResult<VendaDTO>> Adicionar([FromBody] VendaDTO venda)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    _vendasService.Adicionar(venda);
-                    return Created();
+                    VendaDTO novaVenda = _vendasService.Adicionar(venda);
+                    await _vendaMqPublisher.PublicarMensagemAsync(novaVenda, RabbitMQFilas.VendasQueue);
+                    return Ok(novaVenda);
                 }
 
                 return BadRequest();
@@ -85,14 +89,15 @@ namespace _123Vendas.Vendas.API.Controllers
 
         // PUT api/<ValuesController>
         [HttpPut("{id}")]
-        public ActionResult Put([FromBody] VendaDTO venda)
+        public async Task<ActionResult<VendaDTO>> Atualizar([FromBody] VendaDTO venda)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    _vendasService.Atualizar(venda);
-                    return Ok();
+                    VendaDTO vendaAtualizada = _vendasService.Atualizar(venda);
+                    await _vendaMqPublisher.PublicarMensagemAsync(vendaAtualizada, RabbitMQFilas.VendasQueue);
+                    return Ok(vendaAtualizada);
                 }
 
                 return BadRequest();
@@ -105,7 +110,7 @@ namespace _123Vendas.Vendas.API.Controllers
 
         // DELETE api/<ValuesController>/{id}
         [HttpDelete("{id}")]
-        public ActionResult Delete(string id)
+        public async Task<ActionResult<VendaDTO>> Cancelar(string id)
         {
             try
             {
@@ -113,14 +118,15 @@ namespace _123Vendas.Vendas.API.Controllers
 
                 if (Guid.TryParse(id, out vendaId))
                 {
-                    var venda = _vendasService.Deletar(vendaId);
+                    VendaDTO vendaCancelada = _vendasService.Cancelar(vendaId);
 
-                    if (venda == null)
+                    if (vendaCancelada == null)
                     {
                         return NotFound();
                     }
 
-                    return Ok();
+                    await _vendaMqPublisher.PublicarMensagemAsync(vendaCancelada, RabbitMQFilas.VendasQueue);
+                    return Ok(vendaCancelada);
                 }
 
                 return BadRequest();

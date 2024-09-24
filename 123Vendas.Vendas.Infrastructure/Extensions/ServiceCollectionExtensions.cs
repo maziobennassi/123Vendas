@@ -1,9 +1,13 @@
-﻿using _123Vendas.Vendas.Application.Interfaces.Services;
+﻿using _123Vendas.Vendas.Application.Interfaces.Publishers;
+using _123Vendas.Vendas.Application.Interfaces.Services;
 using _123Vendas.Vendas.Application.Services;
 using _123Vendas.Vendas.Application.Services.Interfaces;
 using _123Vendas.Vendas.Domain.Repositories;
 using _123Vendas.Vendas.Infrastructure.Mappers.Profiles;
 using _123Vendas.Vendas.Infrastructure.Persistance;
+using _123Vendas.Vendas.Infrastructure.RabbitMQ.Consumers;
+using _123Vendas.Vendas.Infrastructure.RabbitMQ.Publishers;
+using _123Vendas.Vendas.Infrastructure.RabbitMQ.Settings;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -31,6 +35,11 @@ namespace _123Vendas.Vendas.Infrastructure.Extensions
 
             //Services
             services.AddScoped<IVendasService, VendasService>();
+
+            //RabbitMQ
+            services.AddHostedService<VendasMessageConsumerService>();
+            services.AddHostedService<ProdutosMessageConsumerService>();
+            services.AddScoped(typeof(IRabbitMQPublisher<>), typeof(RabbitMQPublisher<>));
         }
     }
 }

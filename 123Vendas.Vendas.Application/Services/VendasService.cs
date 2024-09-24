@@ -35,21 +35,23 @@ namespace _123Vendas.Vendas.Application.Services
             return _mapper.Map<List<VendaDTO>>(vendas);
         }
 
-        public void Adicionar(VendaDTO vendaDto)
+        public VendaDTO Adicionar(VendaDTO vendaDto)
         {
             Venda venda = _mapper.Map<Venda>(vendaDto);
-            _vendasRepository.Adicionar(venda);
+            Venda novaVenda = _vendasRepository.Adicionar(venda);
+            return _mapper.Map<VendaDTO>(novaVenda);
         }
 
-        public void Atualizar(VendaDTO vendaDto)
+        public VendaDTO Atualizar(VendaDTO vendaDto)
         {
             Venda venda = _mapper.Map<Venda>(vendaDto);
-            _vendasRepository.Atualizar(venda);
+            Venda vendaAtualizada = _vendasRepository.Atualizar(venda);
+            return _mapper.Map<VendaDTO>(vendaAtualizada);
         }
 
-        public VendaDTO Deletar(Guid id)
+        public VendaDTO Cancelar(Guid id)
         {
-            VendaDTO vendaDto = new();
+            VendaDTO vendaDto = null;
             Venda venda = _vendasRepository.BuscarPorIdComProdutos(id);
 
             if (venda != null)

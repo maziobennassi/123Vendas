@@ -1,5 +1,4 @@
 ﻿using _123Vendas.Vendas.Application.DTOs;
-using System.Linq.Expressions;
 
 namespace _123Vendas.Vendas.Application.Interfaces.Services
 {
@@ -7,8 +6,8 @@ namespace _123Vendas.Vendas.Application.Interfaces.Services
     {
         List<VendaDTO> BuscarTodos();
         VendaDTO BuscarPorId(Guid id);
-        void Adicionar(VendaDTO entity);
-        void Atualizar(VendaDTO entity);
-        VendaDTO Deletar(Guid id);
+        VendaDTO Adicionar(VendaDTO entity);
+        VendaDTO Atualizar(VendaDTO entity);
+        VendaDTO Cancelar(Guid id);
     }
 }
